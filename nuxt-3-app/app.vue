@@ -9,3 +9,6 @@
     </div>
   </v-app>
 </template>
+<script setup lang="ts">
+import "@/styles/blog.scss";
+</script>
