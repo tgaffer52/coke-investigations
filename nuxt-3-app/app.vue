@@ -1,13 +1,15 @@
 <template>
-  <v-app>
-    <div class="flex flex-col h-screen">
-      <Banner />
-      <div class="flex flex-grow">
-        <Sidebar />
-        <NuxtPage class="overflow-y-auto" />
+  <NuxtLayout>
+    <v-app>
+      <div class="flex flex-col h-screen">
+        <Banner />
+        <div class="flex flex-grow">
+          <Sidebar />
+          <NuxtPage class="overflow-y-auto" />
+        </div>
       </div>
-    </div>
-  </v-app>
+    </v-app>
+  </NuxtLayout>
 </template>
 <script setup lang="ts">
 import "@/styles/blog.scss";
