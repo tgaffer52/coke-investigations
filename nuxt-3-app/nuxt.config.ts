@@ -2,6 +2,11 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+  css: [
+    "vuetify/lib/styles/main.sass",
+    "@mdi/font/css/materialdesignicons.css", // For MDI icons
+    "@/styles/blog.scss",
+  ],
   build: {
     transpile: ["vuetify"],
   },
