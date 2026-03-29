@@ -68,6 +68,6 @@ So when I talk about “dangerous” ghosts, I am usually talking about Class 3 
 
 However, not all ghosts are bad. Most Class 4 ghosts, and even some Class 3 ghosts, think and act just like humans, for better or for worse. Some of them act like murderous psychopaths, some cry and rage at their situation, and some live like a priest or a Zen Buddhist. Some ghosts heal or calm anybody that walks inside. Some ghosts are just tricksters. That is to say that ghosts come as wide and as varied as humans.
 
-If you see a ghost, let me know! I have a Discord, and feel free to email me at coke-investigations@gmail.com.
+If you see a ghost, let me know! I have a Discord, and feel free to email me at koke-investigations@gmail.com.
 
 Also, if you like my content, consider subscribing to my Youtube channel and joining my Patreon. Patrons at $5 or more get exclusive behind-the-scenes content to my investigations!

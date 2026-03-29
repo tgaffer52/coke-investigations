@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4 px-[5vw]">
+  <div class="blog-content py-4 px-[5vw]">
     <ContentRenderer v-if="aboutGhosts" :value="aboutGhosts" />
     <div v-else>Content not found</div>
   </div>

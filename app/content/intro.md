@@ -1,6 +1,6 @@
 # A Little About Me
 
-My name is Koki Yamada. I lived in Fukuoka, Japan until I was about eight. While I was at primary school, whenever my homeroom teacher did a role call, I would always say, “Ms. Sato, you forgot Genki again.” Because, in my mind, she always did. Genki was a boy our age that, in my mind, always stayed in the classroom, but it looked like he studied and played with us. The only thing different about him was maybe the odd clothing and, of course, his misshapen head. Whenever I mentioned him, though, the other kids would give me weird looks. Weird looks turned into bullying, and I started telling my mom that I didn’t want to go to school any more. When she forced me to go, I stopped interacting with Genki. I ignored him, and he seemed to sad because of it.
+My name is Koki Yamada. I lived in Fukuoka, Japan until I was about eight. While I was at primary school, whenever my homeroom teacher did a role call, I would always say, “Ms. Sato, you forgot Genki again.” Because, in my mind, she always did. Genki was a boy our age that, in my mind, always stayed in the classroom, but it looked like he studied and played with us. The only thing different about him was maybe the odd clothing and, of course, his misshapen head. Whenever I mentioned him, though, the other kids would give me weird looks. Weird looks turned into bullying, and I started telling my mom that I didn’t want to go to school any more. When she forced me to go, I stopped interacting with Genki. I ignored him, and he seemed to be sad because of it.
 
 The next year, my mom and I moved to San Diego. We managed to snag a nice house on the cheap, and I soon figured out why. A little girl drowned in the bath tub in the bathroom upstairs, and the parents were so distraught that they took the first buy. offered by my mom, and moved out as quickly as possible. The little girl’s name turned out to be Ellie, and she turned into a dear friend of mine.
 
@@ -52,6 +52,6 @@ With Ellie as a willing volunteer, we said our goodbyes and tried it out. I told
 
 ### Conclusion
 
-It was a teary experience. I grieved for her like I would a dear friend, because she was. But I also knew that I had done a good thing, and I thought that I could make my mark on the world with it. I wanted to be a “ghost guru,” so I dropped out of UCLA and started my [YouTube channel](http://youtube.com/coke-investigations). If you guys could go over there and support my channel, it would mean the world to me.
+It was a teary experience. I grieved for her like I would a dear friend, because she was. But I also knew that I had done a good thing, and I thought that I could make my mark on the world with it. I wanted to be a “ghost guru,” so I dropped out of UCLA and started my [YouTube channel](http://youtube.com/koke-investigations). If you guys could go over there and support my channel, it would mean the world to me.
 
-I’m also going to start a Patreon! [Link here.](http://patreon.com/coke-investigations) Subscribers at $5 or more will get exclusive content during my investigations.
+I’m also going to start a Patreon! [Link here.](http://patreon.com/koke-investigations) Subscribers at $5 or more will get exclusive content during my investigations.

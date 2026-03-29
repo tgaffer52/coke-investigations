@@ -3,8 +3,9 @@
     <v-app>
       <Sidebar />
       <Banner />
-      <v-main>
+      <v-main class="mt-16">
         <NuxtPage />
+        <Footer />
       </v-main>
     </v-app>
   </NuxtLayout>

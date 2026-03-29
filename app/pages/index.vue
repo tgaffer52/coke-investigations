@@ -5,10 +5,10 @@
       alt="Waverly Hills Sanatorium"
     />
   </div>
-  <div
-    class="relative z-1 flex flex-col gap-y-4 w-full py-4 px-8 text-white min-h-screen"
-  >
-    <h1 class="text-2xl mb-4 text-center">Welcome to Koke Investigations!</h1>
+  <div class="relative z-1 flex flex-col gap-y-4 w-full py-4 px-8 min-h-screen">
+    <h1 class="text-5xl mb-4 text-center barriecito">
+      Welcome to Koke Investigations!
+    </h1>
     <div
       class="relative bg-black mx-auto aspect-video h-[50vh] border-2 border-white flex justify-center items-center"
     >
@@ -22,16 +22,16 @@
       </p>
     </div>
     <v-expansion-panels>
-      <v-expansion-panel
-        ><v-expansion-panel-title>
-          <span class="text-italic">Audio Transcription</span>
+      <v-expansion-panel color="#880808">
+        <v-expansion-panel-title class="barriecito">
+          Audio Transcription
         </v-expansion-panel-title>
         <v-expansion-panel-text>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 p-2">
             <p>
-              Coke: Hey Cokies! It's time for another episode of Coke
+              Koke: Hey Kokies! It's time for another episode of Koke
               Investigations. If this is your first time, my name is Koki
-              Yamada, my friends call me Coke. You may not believe it, but I can
+              Yamada, my friends call me Koke. You may not believe it, but I can
               see ghosts, and they are all around us. Not only that, but I can
               help them, too. My team heard about this abandoned hospital in
               Kentucky, and so we went to check it out. As always, I have my
@@ -65,7 +65,7 @@
               >
             </p>
             <p>
-              Coke: Okay, so I've heard a lot of stories about Room 502, and
+              Koke: Okay, so I've heard a lot of stories about Room 502, and
               we'll make our way upstairs pretty soon, but I was just wandering
               the halls and thought I saw something.
             </p>
@@ -86,19 +86,19 @@
             </p>
             <p><em>[Rustling]</em></p>
             <p>
-              Coke: This is my ghost protection helmet. It blocks low electrical
+              Koke: This is my ghost protection helmet. It blocks low electrical
               frequencies and keeps the ghosts from messing with my mind. Carey
               is wearing one already.
             </p>
             <p><em>[Two sharp metal clangs]</em></p>
             <p>
-              Coke: If anything happens, like if I"m paralyzed or I start
+              Koke: If anything happens, like if I"m paralyzed or I start
               hurting myself, then Carey will charge in like a white knight and
               put the helmet on me. It's rare that I need it, but oh so
               essential. Alright, I'm going in...
             </p>
             <p>
-              Coke: Okay, wow... From what I'm seeing, this hospital looks brand
+              Koke: Okay, wow... From what I'm seeing, this hospital looks brand
               new, though not much better. Patients are passing by me outside.
               If I had to guess, this is the early 20th century. Ah, there she
               is, I see her. She's arguing with the doctors. Well, I wouldn't
@@ -109,12 +109,12 @@
               moving--oh, shit!
             </p>
             <p>
-              <em>[Loud thump. Coke screams. His screams get louder.]</em>
+              <em>[Loud thump. Koke screams. His screams get louder.]</em>
             </p>
-            <p>Coke: Ah, my eyes! Carey! Carey! Helmet!</p>
+            <p>Koke: Ah, my eyes! Carey! Carey! Helmet!</p>
             <p><em>[Rustling. Footsteps. Heavy breathing.]</em></p>
             <p>
-              Coke: Okay, uh... God, I... she just came at me. She was
+              Koke: Okay, uh... God, I... she just came at me. She was
               scratching out my eyes. I couldn't stop her. It felt so real, like
               I still can't believe my eyes are fine... I need a minute...
             </p>
@@ -140,12 +140,14 @@
     <p class="absolute text-xs text-slate-400 bottom-0 right-2 w-full text-end">
       Image courtesy of
       <a
-        href="https://commons.wikimedia.org/wiki/File:Waverly_Hills_Sanatorium.jpg"
+        href="https://commons.wikimedia.org/wiki/File:Waverly_Hills_Sanatorium_2018.jpg"
         target="_blank"
         class="text-blue-500 underline"
         >Royasfoto73, CC BY-SA 4.0</a
       >, via Wikimedia Commons. <br />Saturation, contrast, and brightness
       filters applied.
+      <br />
+      Image under Creative Commons license. No copyright infringement intended.
     </p>
   </div>
 </template>
