@@ -37,10 +37,13 @@
       <v-divider></v-divider>
       <v-list-item
         style="background-color: #880808"
-        title="Blogs"
+        title="Case Logs"
       ></v-list-item>
       <v-divider></v-divider>
-      <NuxtLink to="/blogs/2021-01-23">
+      <NuxtLink to="/logs/2020-12-25">
+        <v-list-item link title="2020/12/25"></v-list-item>
+      </NuxtLink>
+      <NuxtLink to="/logs/2021-01-23">
         <v-list-item link title="2021/01/23"></v-list-item>
       </NuxtLink>
     </div>
