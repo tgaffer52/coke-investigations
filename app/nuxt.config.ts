@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     },
     ,
     "@nuxt/content",
+    "@pinia/nuxt",
   ],
   tailwindcss: {
     exposeConfig: true,

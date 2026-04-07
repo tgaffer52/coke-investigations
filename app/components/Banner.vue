@@ -3,7 +3,7 @@
   <!-- We use ref="navbarRef" so Vue can access this element in the script -->
   <nav
     ref="navbarRef"
-    class="fixed w-full h-16 bg-gray-900 shadow-xl overflow-hidden flex items-center justify-between px-6 z-10 border-b-4 border-[#880808]"
+    class="w-full h-16 bg-neutral-900 flex items-center justify-between px-6 z-20 border-"
   >
     <!-- CANVAS BACKGROUND -->
     <canvas
@@ -12,11 +12,11 @@
     ></canvas>
 
     <!-- Navbar Content (Foreground) -->
-    <div class="relative z-10 flex items-center justify-between w-full">
+    <div class="relative z-10 flex justify-between w-full">
       <!-- Logo / Title -->
       <NuxtLink
         to="/"
-        class="barriecito brand-title text-white font-bold text-2xl flex items-center gap-3 tracking-wide no-select group"
+        class="barriecito brand-title font-bold text-2xl flex items-center gap-3 tracking-wide no-select group"
       >
         <span class="p-2">
           <v-icon class="ghost-icon">mdi-ghost</v-icon>
@@ -25,22 +25,29 @@
       </NuxtLink>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex gap-6 text-gray-300 font-medium">
-        <NuxtLink
-          to="/intro"
-          class="hover:text-white hover:underline decoration-[#880808] decoration-2 underline-offset-4 transition-all"
-          >Who am I?</NuxtLink
-        >
-        <NuxtLink
-          to="/about-ghosts"
-          class="hover:text-white hover:underline decoration-[#880808] decoration-2 underline-offset-4 transition-all"
+      <div class="hidden md:flex gap-6 text-neutral-300 text-lg font-medium">
+        <NuxtLink to="/intro" class="nav-link">Who am I?</NuxtLink>
+        <NuxtLink to="/about-ghosts" class="nav-link"
           >What Are Ghosts?</NuxtLink
         >
-        <NuxtLink
-          to="/logs"
-          class="hover:text-white hover:underline decoration-[#880808] decoration-2 underline-offset-4 transition-all"
-          >Case Logs</NuxtLink
-        >
+        <div class="nav-link">
+          Case Logs
+
+          <v-menu
+            activator="parent"
+            open-on-hover
+            transition="slide-y-transition"
+          >
+            <ul class="bg-[#171717] overflow-hidden rounded">
+              <SidebarLink
+                v-for="fileName in logFiles"
+                :key="fileName"
+                :title="getFormattedDate(fileName || '')"
+                :link="`/logs/${fileName}`"
+              />
+            </ul>
+          </v-menu>
+        </div>
       </div>
 
       <!-- Mobile Menu Icon -->
@@ -53,10 +60,13 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from "vue";
+import { useLogFileStore } from "~/stores/logFilesStore";
 
 // 1. Vue Template Refs instead of document.getElementById
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const navbarRef = ref<HTMLElement | null>(null);
+const { logFiles } = useLogFileStore();
+const menu = ref(true);
 
 // Variables for animation state
 let animationFrameId: number;
@@ -206,5 +216,9 @@ onBeforeUnmount(() => {
 /* Prevent text selection when playing with the waves */
 .no-select {
   user-select: none;
+}
+
+.nav-link {
+  @apply h-full flex items-center hover:text-neutral-100 transition-all;
 }
 </style>

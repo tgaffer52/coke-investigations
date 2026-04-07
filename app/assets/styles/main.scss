@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Barriecito&family=Butcherman&display=swap");
 
 body {
   font-family: "Playfair", serif;
   font-weight: 400;
   font-style: normal;
   background-color: #171717;
+  color: #e5e7eb;
 }
 
 .barriecito {
@@ -15,6 +16,12 @@ body {
 
 .caveat {
   font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.butcherman {
+  font-family: "Butcherman", system-ui;
   font-weight: 400;
   font-style: normal;
 }

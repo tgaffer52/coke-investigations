@@ -1,12 +1,14 @@
 <template>
-  <NuxtLayout>
-    <v-app>
-      <Sidebar />
+  <v-app>
+    <v-app-bar elevation="0">
       <Banner />
-      <v-main class="mt-16">
-        <NuxtPage />
-        <Footer />
-      </v-main>
-    </v-app>
-  </NuxtLayout>
+    </v-app-bar>
+
+    <Sidebar />
+
+    <v-main>
+      <NuxtPage />
+      <Footer />
+    </v-main>
+  </v-app>
 </template>

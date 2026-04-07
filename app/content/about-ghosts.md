@@ -1,4 +1,6 @@
-# Getting Started - Ghosts are real! How?! Where?! Why?! What do they do?!
+# Getting Started
+
+### Ghosts are real! How?! Where?! Why?! What do they do?!
 
 Hello! If you are new to my website and/or if you’ve heard about the newest reports, yes, it’s true. Ghosts are real. A lot of news sites have reported on this particular article in Nature: “We found them—Scientific Evidence of ghosts is finally here.” [https://www.nature.com/articles/d41586-025-00551](https://www.nature.com/articles/d41586-025-00551-z)
 

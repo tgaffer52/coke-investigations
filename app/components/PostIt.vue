@@ -1,6 +1,6 @@
 <template>
   <div
-    class="post-it caveat relative hover:rounded-br-3xl pt-4 px-4 max-w-[50vw]"
+    class="post-it caveat relative hover:rounded-br-3xl pt-4 px-4 max-w-[50%]"
   >
     <!-- Small black triangle that appears on hover in the bottom right -->
     <div class="triangle rounded-br-3xl transition-opacity duration-300"></div>
