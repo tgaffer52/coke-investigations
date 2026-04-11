@@ -8,7 +8,7 @@
     <!-- CANVAS BACKGROUND -->
     <canvas
       ref="canvasRef"
-      class="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+      class="hidden md:block absolute top-0 left-0 w-full h-full pointer-events-none z-0"
     ></canvas>
 
     <!-- Navbar Content (Foreground) -->
@@ -38,7 +38,7 @@
             open-on-hover
             transition="slide-y-transition"
           >
-            <ul class="bg-[#171717] overflow-hidden rounded">
+            <ul class="bg-[#171717] text-neutral-400 overflow-hidden rounded">
               <SidebarLink
                 v-for="fileName in logFiles"
                 :key="fileName"
@@ -51,9 +51,9 @@
       </div>
 
       <!-- Mobile Menu Icon -->
-      <button class="md:hidden text-gray-300 hover:text-white">
-        <v-icon>mdi-menu</v-icon>
-      </button>
+      <div class="flex items-center">
+        <SpookyBurger v-model="mobileMenu" class="scale-[0.7]" />
+      </div>
     </div>
   </nav>
 </template>
@@ -66,7 +66,8 @@ import { useLogFileStore } from "~/stores/logFilesStore";
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const navbarRef = ref<HTMLElement | null>(null);
 const { logFiles } = useLogFileStore();
-const menu = ref(true);
+
+const mobileMenu = defineModel();
 
 // Variables for animation state
 let animationFrameId: number;
@@ -219,6 +220,6 @@ onBeforeUnmount(() => {
 }
 
 .nav-link {
-  @apply h-full flex items-center hover:text-neutral-100 transition-all;
+  @apply h-full flex items-center text-neutral-400 hover:text-neutral-100 transition-all;
 }
 </style>

@@ -1,9 +1,8 @@
 <template>
-  <div
-    class="post-it caveat relative hover:rounded-br-3xl pt-4 px-4 max-w-[50%]"
-  >
-    <!-- Small black triangle that appears on hover in the bottom right -->
-    <div class="triangle rounded-br-3xl transition-opacity duration-300"></div>
+  <div class="post-it caveat relative pt-4 px-4 md:max-w-[50%]">
+    <!-- Small black triangle that appears on hover in the bottom right.
+      Commenting Out because I don't want users to think it is interactive. -->
+    <!-- <div class="triangle rounded-br-3xl transition-opacity duration-300"></div> -->
 
     <div
       class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-white/40 backdrop-blur-sm shadow-sm rotate-2 z-10 border border-white/50"

@@ -1,28 +1,30 @@
 <template>
-  <div class="fixed z-0 w-screen h-screen">
+  <div class="fixed z-0 w-screen h-screen object-cover">
     <img
       src="@/assets/images/w-h-sanitorium.jpg"
       alt="Waverly Hills Sanatorium"
+      class="w-full h-full"
     />
   </div>
-  <div class="relative z-1 flex flex-col gap-y-4 w-full py-4 px-8 min-h-screen">
+  <div class="relative z-1 flex flex-col gap-y-4 w-full py-4 px-8">
     <h1 class="text-5xl mb-4 text-center barriecito">
       Welcome to Koke Investigations!
     </h1>
     <div
-      class="relative bg-black mx-auto aspect-video h-[50vh] border-2 border-white flex justify-center items-center"
+      class="relative mx-auto w-full max-w-[calc(50dvh*16/9)] aspect-video bg-black border-neutral-950 border-4"
     >
-      <v-btn icon="mdi-play" class="mb-4"></v-btn>
+      <TvStatic />
 
-      <p
-        class="absolute bottom-20 w-full text-center"
+      <div
+        class="absolute top-[calc(50%-56px)] left-[calc(50%-96.25px)] p-3 text-center bg-neutral-900/40"
         style="font-family: system-ui"
       >
-        Video cannot be played
-      </p>
+        <v-btn icon="mdi-play" class="mb-4"></v-btn>
+        <p>Video cannot be played</p>
+      </div>
     </div>
-    <v-expansion-panels>
-      <v-expansion-panel color="#880808">
+    <v-expansion-panels class="hidden md:relative">
+      <v-expansion-panel color="#880808" bg-color="#171717">
         <v-expansion-panel-title class="barriecito">
           Audio Transcription
         </v-expansion-panel-title>
@@ -137,17 +139,20 @@
         </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>
-    <p class="absolute text-xs text-slate-400 bottom-0 right-2 w-full text-end">
-      Image courtesy of
-      <a
-        href="https://commons.wikimedia.org/wiki/File:Waverly_Hills_Sanatorium_2018.jpg"
-        target="_blank"
-        class="text-blue-500 underline"
-        >Royasfoto73, CC BY-SA 4.0</a
-      >, via Wikimedia Commons. <br />Saturation, contrast, and brightness
-      filters applied.
-      <br />
-      Image under Creative Commons license. No copyright infringement intended.
-    </p>
+    <div class="w-full flex justify-end">
+      <p class="bg-black/60 text-xs text-slate-400 text-end">
+        Image courtesy of
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Waverly_Hills_Sanatorium_2018.jpg"
+          target="_blank"
+          class="text-blue-500 underline"
+          >Royasfoto73, CC BY-SA 4.0</a
+        >, via Wikimedia Commons. <br />Saturation, contrast, and brightness
+        filters applied.
+        <br />
+        Image under Creative Commons license. No copyright infringement
+        intended.
+      </p>
+    </div>
   </div>
 </template>

@@ -1,15 +1,14 @@
 <template>
-  <!-- The Flashlight Layer -->
-
   <v-navigation-drawer
     v-model="open"
     :width="180"
-    class="relative antialiased flex-shrink-0 border-none"
+    class="antialiased flex-shrink-0 border-none"
   >
+    <!-- The Flashlight Layer -->
     <div
       v-if="!isTouchDevice"
       v-show="isFlashlightEnabled && open"
-      class="fixed pointer-events-none h-screen w-[180px] z-100"
+      class="fixed pointer-events-none h-screen w-[180px] z-10"
       :style="{
         background: `radial-gradient(circle 250px at ${x}px ${y - 64}px, rgba(255, 255, 255, 0.5) 0%, transparent 80%)`,
       }"
@@ -19,8 +18,8 @@
         <ul
           :class="isFlashlightEnabled ? 'text-neutral-800' : 'text-neutral-400'"
         >
-          <li class="p-3 bg-stone-800 text-neutral-100">
-            <span>Getting Started</span>
+          <li class="relative z-20 p-3 bg-stone-800 text-neutral-100">
+            Getting Started
           </li>
 
           <SidebarLink title="Who am I?" link="/intro" />
@@ -30,7 +29,9 @@
             class="mb-4"
           />
 
-          <li class="bg-stone-800 p-3 text-neutral-100">Case Logs</li>
+          <li class="relative z-20 bg-stone-800 p-3 text-neutral-100">
+            Case Logs
+          </li>
 
           <SidebarLink
             v-for="fileName in logFiles"
@@ -78,13 +79,22 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { computed } from "vue";
-import { get, useMouse } from "@vueuse/core";
 import { useLogFileStore } from "~/stores/logFilesStore";
 
 const isFlashlightEnabled = ref(true);
 const open = ref(true);
-const { x, y } = useMouse();
+const x = ref(-1000);
+const y = ref(-1000);
 const { logFiles } = useLogFileStore();
+
+onMounted(() => {
+  if (!window) return;
+  window.addEventListener("mousemove", (e) => {
+    // pageX and pageY automatically add window.scrollY for you
+    x.value = e.pageX;
+    y.value = e.pageY;
+  });
+});
 
 const isTouchDevice = computed(() => {
   if (!window) return false;

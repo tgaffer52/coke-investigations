@@ -1,4 +1,7 @@
 .blog-content {
+  width: 100dvw;
+  overflow: hidden;
+
   h1,
   h2,
   h3,
@@ -9,7 +12,7 @@
 
   p {
     a {
-      @apply text-blue-500 hover:text-blue-800 transition-colors duration-300 underline;
+      @apply text-blue-500 hover:text-blue-800 transition-colors duration-300 underline break-all;
     }
 
     font-size: 1.25rem;
@@ -28,7 +31,18 @@
     font-size: 2rem;
   }
 
-  table,
+  table {
+    /* Ensure the wrapper takes up the full width available */
+    width: 100%;
+    display: block;
+
+    /* This creates the horizontal scrollbar ONLY if the content overflows */
+    overflow-x: auto;
+
+    /* This enables smooth, momentum-based scrolling on iOS devices */
+    -webkit-overflow-scrolling: touch;
+  }
+
   th,
   td {
     border: 1px solid;
