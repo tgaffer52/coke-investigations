@@ -8,7 +8,7 @@
     <!-- CANVAS BACKGROUND -->
     <canvas
       ref="canvasRef"
-      class="hidden md:block absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+      class="hidden desktop:block absolute top-0 left-0 w-full h-full pointer-events-none z-0"
     ></canvas>
 
     <!-- Navbar Content (Foreground) -->
@@ -25,7 +25,9 @@
       </NuxtLink>
 
       <!-- Navigation Links -->
-      <div class="hidden md:flex gap-6 text-neutral-300 text-lg font-medium">
+      <div
+        class="hidden desktop:flex gap-6 text-neutral-300 text-lg font-medium"
+      >
         <NuxtLink to="/intro" class="nav-link">Who am I?</NuxtLink>
         <NuxtLink to="/about-ghosts" class="nav-link"
           >What Are Ghosts?</NuxtLink
@@ -51,7 +53,7 @@
       </div>
 
       <!-- Mobile Menu Icon -->
-      <div class="flex items-center">
+      <div class="flex desktop:hidden items-center">
         <SpookyBurger v-model="mobileMenu" class="scale-[0.7]" />
       </div>
     </div>

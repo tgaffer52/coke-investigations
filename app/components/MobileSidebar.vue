@@ -4,6 +4,7 @@
     :width="180"
     class="antialiased flex-shrink-0 border-none"
     location="right"
+    temporary
   >
     <div class="h-full w-full bg-[#171717] overflow-hidden">
       <div class="w-[180px]">
@@ -38,7 +39,5 @@
 import { useLogFileStore } from "~/stores/logFilesStore";
 
 const open = defineModel<boolean>();
-const emit = defineEmits(["update:model-value"]);
-
 const { logFiles } = useLogFileStore();
 </script>

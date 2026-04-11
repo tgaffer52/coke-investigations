@@ -27,7 +27,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
-    // and more...
   },
   vite: {
     vue: {

@@ -4,7 +4,7 @@
       <Banner v-model="mobileMenu" />
     </v-app-bar>
 
-    <MobileSidebar v-if="isMobile" v-model="mobileMenu" />
+    <MobileSidebar v-if="smAndDown" v-model="mobileMenu" />
     <Sidebar v-else />
 
     <v-main class="flex flex-col">
@@ -16,9 +16,8 @@
   </v-app>
 </template>
 <script setup lang="ts">
+import { useDisplay } from "vuetify";
+
 const mobileMenu = ref(false);
-const isMobile = computed(() => {
-  if (!window) return;
-  return window.innerWidth < 768;
-});
+const { smAndDown } = useDisplay();
 </script>

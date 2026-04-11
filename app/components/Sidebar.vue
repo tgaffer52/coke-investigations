@@ -16,7 +16,11 @@
     <div class="h-full w-full bg-[#171717] overflow-hidden">
       <div class="w-[180px]">
         <ul
-          :class="isFlashlightEnabled ? 'text-neutral-800' : 'text-neutral-400'"
+          :class="
+            isFlashlightEnabled && !isTouchDevice
+              ? 'text-neutral-800'
+              : 'text-neutral-400'
+          "
         >
           <li class="relative z-20 p-3 bg-stone-800 text-neutral-100">
             Getting Started
@@ -108,6 +112,7 @@ const isTouchDevice = computed(() => {
 onMounted(() => {
   if (isTouchDevice.value) {
     open.value = false;
+    isFlashlightEnabled.value = false;
   }
 });
 </script>
