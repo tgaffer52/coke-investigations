@@ -35,7 +35,7 @@ const route = useRoute();
 
 // 2. Use `computed` instead of manual watchers.
 // These will automatically recalculate anytime `route.path` changes.
-const dateString = computed(() => route.path.replace("/logs/", ""));
+const dateString = computed(() => route.path.replace("/case-logs/", ""));
 const date = computed(() => new Date(dateString.value));
 
 // 3. Let Nuxt handle the reactivity!
