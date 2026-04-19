@@ -45,7 +45,7 @@
                 v-for="fileName in logFiles"
                 :key="fileName"
                 :title="getFormattedDate(fileName || '')"
-                :link="`/logs/${fileName}`"
+                :link="`/case-logs/${fileName}`"
               />
             </ul>
           </v-menu>

@@ -5,7 +5,7 @@ export const useLogFileStore = defineStore("logFiles", () => {
 
   // 1. Read all .vue files in the target directory using Vite's glob import
   // Adjust the path '~/pages/logs' to wherever your actual logs folder is located.
-  const glob = import.meta.glob("~/pages/logs/*.vue");
+  const glob = import.meta.glob("~/pages/case-logs/*.vue");
 
   // 2. Extract just the file names without paths or extensions
 

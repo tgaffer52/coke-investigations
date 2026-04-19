@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between mt-10">
     <NuxtLink
-      :to="`/logs/${previous}`"
+      :to="previous ? `/case-logs/${previous}` : ''"
       class="cursor-pointer hover:text-[#880808] transition-colors duration-300"
       :disabled="!previous"
     >
@@ -10,7 +10,7 @@
       >
     </NuxtLink>
     <NuxtLink
-      :to="`/logs/${next}`"
+      :to="next ? `/case-logs/${next}` : ''"
       class="cursor-pointer hover:text-[#880808] transition-colors duration-300"
       :disabled="!next"
     >
