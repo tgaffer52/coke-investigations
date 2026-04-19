@@ -1,7 +1,7 @@
 <template>
   <div class="fixed z-0 w-screen h-screen object-cover">
     <img
-      src="@/assets/images/w-h-sanitorium.jpg"
+      src="@/assets/images/w-h-sanitorium.webp"
       alt="Waverly Hills Sanatorium"
       class="w-full h-full"
     />

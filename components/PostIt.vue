@@ -29,7 +29,7 @@ const { name, classification, evaluation, riskLevel } = defineProps<{
 </script>
 <style scoped lang="scss">
 .post-it {
-  background: url("@/assets/images/parchment.png") no-repeat center center;
+  background: url("@/assets/images/parchment.webp") no-repeat center center;
   color: #121212;
 
   &:hover .triangle {
