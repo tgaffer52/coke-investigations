@@ -52,6 +52,6 @@ With Ellie as a willing volunteer, we said our goodbyes and tried it out. I told
 
 ### Conclusion
 
-It was a teary experience. I grieved for her like I would a dear friend, because she was. But I also knew that I had done a good thing, and I thought that I could make my mark on the world with it. I wanted to be a “ghost guru,” so I dropped out of UCLA and started my [YouTube channel](http://youtube.com/koke-investigations). If you guys could go over there and support my channel, it would mean the world to me.
+It was a teary experience. I grieved for her like I would a dear friend, because she was. But I also knew that I had done a good thing, and I thought that I could make my mark on the world with it. I wanted to be a “ghost guru,” so I dropped out of UCLA and started my YouTube channel. If you guys could go over there and support my channel, it would mean the world to me.
 
-I’m also going to start a Patreon! [Link here.](http://patreon.com/koke-investigations) Subscribers at $5 or more will get exclusive content during my investigations.
+I’m also going to start a Patreon! Subscribers at $5 or more will get exclusive content during my investigations.

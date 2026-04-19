@@ -6,12 +6,16 @@
     <div class="links flex">
       <v-btn
         icon="mdi-patreon"
-        to="http://youtube.com/koke-investigations"
+        href="https://www.youtube.com/koke-investigations"
+        target="_blank"
+        rel="noopener noreferrer"
         variant="text"
       ></v-btn>
       <v-btn
         icon="mdi-youtube"
-        to="https://www.patreon.com/koke-investigations"
+        href="https://www.patreon.com/koke-investigations"
+        target="_blank"
+        rel="noopener noreferrer"
         variant="text"
       ></v-btn>
     </div>
