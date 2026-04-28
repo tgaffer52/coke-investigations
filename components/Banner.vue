@@ -3,7 +3,7 @@
   <!-- We use ref="navbarRef" so Vue can access this element in the script -->
   <nav
     ref="navbarRef"
-    class="w-full h-16 bg-neutral-900 flex items-center justify-between px-6 z-20 border-"
+    class="w-screen h-16 bg-neutral-900 flex items-center justify-between px-2 md:px-6 z-20 border-"
   >
     <!-- CANVAS BACKGROUND -->
     <canvas

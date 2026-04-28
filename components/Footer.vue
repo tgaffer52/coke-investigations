@@ -10,6 +10,7 @@
         target="_blank"
         rel="noopener noreferrer"
         variant="text"
+        size="small"
       ></v-btn>
       <v-btn
         icon="mdi-youtube"
@@ -17,6 +18,7 @@
         target="_blank"
         rel="noopener noreferrer"
         variant="text"
+        size="small"
       ></v-btn>
     </div>
   </v-footer>
