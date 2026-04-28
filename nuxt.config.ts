@@ -2,6 +2,16 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+  app: {
+    head: {
+      link: [
+        // Standard SVG favicon
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        // Fallback for older browsers (optional but recommended)
+        { rel: "alternate icon", href: "/favicon.ico" },
+      ],
+    },
+  },
   css: [
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.css", // For MDI icons
