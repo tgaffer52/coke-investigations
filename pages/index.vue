@@ -150,7 +150,7 @@
           CC BY-SA 4.0
         </a>
         , via Wikimedia Commons. / <br />
-        Saturation, brightness, and contrast filters applied from original.
+        Saturation, brightness, and contrast filters applied from original
       </p>
     </div>
   </div>
