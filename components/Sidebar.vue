@@ -83,6 +83,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { computed } from "vue";
+import { useDisplay } from "vuetify";
 import { useLogFileStore } from "~/stores/logFilesStore";
 
 const isFlashlightEnabled = ref(true);
@@ -90,6 +91,7 @@ const open = ref(true);
 const x = ref(-1000);
 const y = ref(-1000);
 const { logFiles } = useLogFileStore();
+const { mdAndDown } = useDisplay();
 
 onMounted(() => {
   if (!window) return;
@@ -111,8 +113,10 @@ const isTouchDevice = computed(() => {
 
 onMounted(() => {
   if (isTouchDevice.value) {
-    open.value = false;
     isFlashlightEnabled.value = false;
+  }
+  if (mdAndDown.value) {
+    open.value = false;
   }
 });
 </script>

@@ -140,18 +140,17 @@
       </v-expansion-panel>
     </v-expansion-panels>
     <div class="w-full flex justify-end">
-      <p class="bg-black/60 text-xs text-slate-400 text-end">
-        Image courtesy of
+      <p class="bg-black/60 p-2 text-xs text-slate-400 text-end">
+        Royasfoto73,
         <a
-          href="https://commons.wikimedia.org/wiki/File:Waverly_Hills_Sanatorium_2018.jpg"
+          href="https://creativecommons.org/licenses/by-sa/4.0"
           target="_blank"
           class="text-blue-500 underline"
-          >Royasfoto73, CC BY-SA 4.0</a
-        >, via Wikimedia Commons. <br />Saturation, contrast, and brightness
-        filters applied.
-        <br />
-        Image under Creative Commons license. No copyright infringement
-        intended.
+        >
+          CC BY-SA 4.0
+        </a>
+        , via Wikimedia Commons. / <br />
+        Saturation, brightness, and contrast filters applied from original.
       </p>
     </div>
   </div>
