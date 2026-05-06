@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Barriecito&family=Butcherman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rosario:ital,wght@0,300..700;1,300..700&family=Caveat:wght@400..700&family=Barriecito&family=Butcherman&display=swap");
 
 @theme {
   --breakpoint-mobile: 960px;
 }
 
+html {
+  overflow-y: auto;
+}
+
 body {
-  font-family: "Playfair", serif;
+  font-family: "Rosario", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #171717;
@@ -28,4 +32,51 @@ body {
   font-family: "Butcherman", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+// Ghost button and blood text arrow style
+/* Optional: Style the button container to be invisible/unobtrusive */
+.ghost-btn {
+  background: transparent;
+  border: none; /* or keep your border if you want it */
+  cursor: pointer;
+}
+
+/* The actual bleeding arrow */
+.blood-text-arrow {
+  /* Make it big enough to see the effect clearly */
+
+  font-weight: bold;
+
+  /* Required for background-clip to work perfectly */
+  display: inline-block;
+
+  /* 1. Create a background that is half red (top) and half white (bottom) */
+  background-image: linear-gradient(
+    to bottom,
+    #8a0303 50%,
+    /* The blood */ #ffffff 50% /* The default arrow color */
+  );
+
+  /* 2. Make the background twice as tall as the arrow */
+  background-size: 100% 200%;
+
+  /* 3. Start by shifting the background up, so only the white bottom half shows */
+  background-position: 0 100%;
+
+  /* 4. Clip the square background strictly to the shape of the text/arrow */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 5. Make the actual text transparent so the background shows through */
+  color: transparent;
+
+  /* 6. Smoothly animate the sliding background */
+  transition: background-position 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* The Hover State */
+.ghost-btn:hover .blood-text-arrow {
+  /* Slide the background down so the red top half covers the arrow */
+  background-position: 0 0;
 }

@@ -3,7 +3,6 @@
     <v-app-bar elevation="0">
       <Banner v-model="mobileMenu" />
     </v-app-bar>
-
     <MobileSidebar v-if="smAndDown" v-model="mobileMenu" />
     <Sidebar v-else />
 
@@ -11,7 +10,9 @@
       <div class="flex-grow">
         <NuxtPage />
       </div>
-      <Footer />
+      <div class="flex-shrink">
+        <Footer />
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -20,4 +21,13 @@ import { useDisplay } from "vuetify";
 
 const mobileMenu = ref(false);
 const { smAndDown } = useDisplay();
+const open = ref(true);
+
+const { mdAndDown } = useDisplay();
+
+onMounted(() => {
+  if (mdAndDown.value) {
+    open.value = false;
+  }
+});
 </script>

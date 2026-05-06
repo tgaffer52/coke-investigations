@@ -2,19 +2,25 @@
   <div class="flex justify-between mt-10">
     <NuxtLink
       :to="previous ? `/case-logs/${previous}` : ''"
-      class="cursor-pointer hover:text-[#880808] transition-colors duration-300"
+      class="cursor-pointer ghost-btn"
       :disabled="!previous"
     >
-      <span class="text-5xl butcherman" :class="previous ? '' : 'hidden'"
+      <span
+        class="blood-text-arrow text-5xl butcherman"
+        :class="previous ? '' : 'hidden'"
         ><</span
       >
     </NuxtLink>
     <NuxtLink
       :to="next ? `/case-logs/${next}` : ''"
-      class="cursor-pointer hover:text-[#880808] transition-colors duration-300"
+      class="cursor-pointer ghost-btn"
       :disabled="!next"
     >
-      <span class="text-5xl butcherman" :class="next ? '' : 'hidden'">></span>
+      <span
+        class="blood-text-arrow text-5xl butcherman"
+        :class="next ? '' : 'hidden'"
+        >></span
+      >
     </NuxtLink>
   </div>
 </template>

@@ -26,7 +26,7 @@
 
       <!-- Navigation Links -->
       <div
-        class="hidden desktop:flex gap-6 text-neutral-300 text-lg font-medium"
+        class="hidden desktop:flex gap-6 text-neutral-300 text-lg font-medium px-3"
       >
         <NuxtLink to="/intro" class="nav-link">Who am I?</NuxtLink>
         <NuxtLink to="/about-ghosts" class="nav-link"
@@ -38,6 +38,7 @@
           <v-menu
             activator="parent"
             open-on-hover
+            open-on-click
             transition="slide-y-transition"
           >
             <ul class="bg-[#171717] text-neutral-400 overflow-hidden rounded">
@@ -222,6 +223,6 @@ onBeforeUnmount(() => {
 }
 
 .nav-link {
-  @apply h-full flex items-center text-neutral-400 hover:text-neutral-100 transition-all;
+  @apply h-20 flex items-center text-neutral-400 hover:text-neutral-100 transition-all;
 }
 </style>
