@@ -9,7 +9,7 @@
         href="https://www.youtube.com/koke-investigations"
         target="_blank"
         rel="noopener noreferrer"
-        variant="text"
+        variant="plain"
         size="small"
       ></v-btn>
       <v-btn
@@ -17,7 +17,7 @@
         href="https://www.patreon.com/koke-investigations"
         target="_blank"
         rel="noopener noreferrer"
-        variant="text"
+        variant="plain"
         size="small"
       ></v-btn>
     </div>
